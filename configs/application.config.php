@@ -5,7 +5,6 @@ return array(
     ),
     'modules' => array(
         'Application',
-        'ZendDeveloperTools',
     ),
     'module_manager_options' => array( 
         'enable_config_cache'      => true,
