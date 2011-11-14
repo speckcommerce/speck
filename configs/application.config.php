@@ -2,15 +2,13 @@
 return array(
     'module_paths' => array(
         realpath(__DIR__ . '/../modules'),
+        realpath(__DIR__ . '/../vendors'),
     ),
     'modules' => array(
         'Application',
     ),
-    'module_manager_options' => array( 
-        'enable_config_cache'      => true,
+    'module_listener_options' => array( 
+        'config_cache_enabled'     => false,
         'cache_dir'                => realpath(__DIR__ . '/../data/cache'),
-        'enable_dependency_check'  => false,
-        'enable_auto_installation' => false,
-        'manifest_dir'             => realpath(__DIR__ . '/../data'),
     ),
 );
