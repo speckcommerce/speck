@@ -5,8 +5,11 @@ return array(
         realpath(dirname(__DIR__) . '/vendor'),
     ),
     'modules' => array(
-        'SpeckCatalog',
         'Application',
+        'SpiffyDoctrine',
+        'EdpUser',
+        'EdpCommon',
+        'SpeckCatalog',
     ),
     'module_listener_options' => array( 
         'config_cache_enabled'    => false,
