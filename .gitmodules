@@ -1,3 +1,15 @@
 [submodule "vendor/ZendFramework"]
 	path = vendor/ZendFramework
 	url = git://github.com/zendframework/zf2.git
+[submodule "vendor/SpeckCatalog"]
+	path = vendor/SpeckCatalog
+	url = git://github.com/speckcommerce/SpeckCatalog.git
+[submodule "vendor/EdpUser"]
+	path = vendor/EdpUser
+	url = git://github.com/EvanDotPro/EdpUser.git
+[submodule "vendor/EdpCommon"]
+	path = vendor/EdpCommon
+	url = git://github.com/EvanDotPro/EdpCommon.git
+[submodule "vendor/SpiffyDoctrine"]
+	path = vendor/SpiffyDoctrine
+	url = git://github.com/SpiffyJr/SpiffyDoctrine.git
