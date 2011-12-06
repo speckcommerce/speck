@@ -5,6 +5,7 @@ return array(
         realpath(dirname(__DIR__) . '/vendor'),
     ),
     'modules' => array(
+        'SpeckCatalog',
         'Application',
     ),
     'module_listener_options' => array( 
