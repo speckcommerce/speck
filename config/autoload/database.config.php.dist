@@ -1,0 +1,17 @@
+<?php
+return array('di' => array(
+    'instance' => array(
+        'doctrine_connection' => array(
+            'parameters' => array(
+                'params' => array(
+                    'driver'   => 'pdo_mysql',
+                    'port'     => '3306', 
+                    'host'     => 'CHANGEME',
+                    'user'     => 'CHANGEME',
+                    'password' => 'CHANGEME',
+                    'dbname'   => 'CHANGEME',
+                ),
+            )
+        ),
+    )
+));
