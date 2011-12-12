@@ -13,3 +13,6 @@
 [submodule "vendor/SpiffyDoctrine"]
 	path = vendor/SpiffyDoctrine
 	url = git://github.com/SpiffyJr/SpiffyDoctrine.git
+[submodule "vendor/SpiffyForm"]
+	path = vendor/SpiffyForm
+	url = https://github.com/SpiffyJr/SpiffyForm.git
