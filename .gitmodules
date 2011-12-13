@@ -16,3 +16,6 @@
 [submodule "vendor/SpiffyForm"]
 	path = vendor/SpiffyForm
 	url = https://github.com/SpiffyJr/SpiffyForm.git
+[submodule "vendor/SpiffyAnnotation"]
+	path = vendor/SpiffyAnnotation
+	url = git://github.com/SpiffyJr/SpiffyAnnotation.git
