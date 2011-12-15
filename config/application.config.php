@@ -3,6 +3,7 @@ return array(
     'modules' => array(
         'Application',
         'SpiffyDoctrine',
+        'SpiffyDoctrineORM',
         'EdpUser',
         'EdpCommon',
         'SpeckCatalog',
