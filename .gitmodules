@@ -19,3 +19,6 @@
 [submodule "vendor/SpiffyAnnotation"]
 	path = vendor/SpiffyAnnotation
 	url = git://github.com/SpiffyJr/SpiffyAnnotation.git
+[submodule "vendor/SpiffyDoctrineORM"]
+	path = vendor/SpiffyDoctrineORM
+	url = git://github.com/SpiffyJr/SpiffyDoctrineORM.git
