@@ -39,7 +39,7 @@ $edpUserSettings = array(
      * Name of Entity class to use. Useful for using your own entity class 
      * instead of the default one provided. Default is EdpUser\Model\User. 
      */
-    'user_model_class' => 'EdpUser\Model\User',
+    'user_model_class' => 'EdpUser\Entity\User',
 
     /**
      * Enable Username 
