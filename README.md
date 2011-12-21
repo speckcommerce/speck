@@ -31,7 +31,7 @@ currently in use:
 * An RDBMS supported by Doctrine2.
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
 * [EdpCommon](https://github.com/EvanDotPro/EdpCommon)
-* [EdpCommon](https://github.com/EvanDotPro/EdpUser)
+* [EdpUser](https://github.com/EvanDotPro/EdpUser)
 * [SpiffyDoctrine](https://github.com/SpiffyJr/SpiffyDoctrine) (optional).
 
 
