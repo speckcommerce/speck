@@ -24,7 +24,7 @@ Requirements
 ------------
 
 The dependencies for SpeckCommerce are wired in with Git submodules so you
-should not have to worr about them. However, here is a list of the modules
+should not have to worry about them. However, here is a list of the modules
 currently in use:
 
 * PHP 5.3.3+
