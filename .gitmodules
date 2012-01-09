@@ -4,12 +4,6 @@
 [submodule "vendor/SpeckCatalog"]
 	path = vendor/SpeckCatalog
 	url = git://github.com/speckcommerce/SpeckCatalog.git
-[submodule "vendor/EdpUser"]
-	path = vendor/EdpUser
-	url = git://github.com/EvanDotPro/EdpUser.git
-[submodule "vendor/EdpCommon"]
-	path = vendor/EdpCommon
-	url = git://github.com/EvanDotPro/EdpCommon.git
 [submodule "vendor/SpiffyDoctrine"]
 	path = vendor/SpiffyDoctrine
 	url = git://github.com/SpiffyJr/SpiffyDoctrine.git
@@ -22,3 +16,9 @@
 [submodule "vendor/SpiffyDoctrineORM"]
 	path = vendor/SpiffyDoctrineORM
 	url = git://github.com/SpiffyJr/SpiffyDoctrineORM.git
+[submodule "vendor/ZfcUser"]
+	path = vendor/ZfcUser
+	url = git://github.com/ZF-Commons/ZfcUser.git
+[submodule "vendor/ZfcBase"]
+	path = vendor/ZfcBase
+	url = git://github.com/ZF-Commons/ZfcBase.git

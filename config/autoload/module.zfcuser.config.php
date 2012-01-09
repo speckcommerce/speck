@@ -1,16 +1,16 @@
 <?php
 /**
- * EdpUser Configuration
+ * ZfcUser Configuration
  *
  * If you have a ./configs/autoload/ directory set up for your project, you can 
  * drop this config file in it and change the values as you wish.
  */
-$edpUserSettings = array(
+$settings = array(
     /**
      * Database Abstraction
      *
      * Specify which of the database abstraction layers (Doctrine2 or Zend\Db) 
-     * that you would like EdpUser to utilize.
+     * that you would like ZfcUser to utilize.
      *
      * Accepted values: 'doctrine' or 'zend_db' 
      */
@@ -20,7 +20,7 @@ $edpUserSettings = array(
      * PDO Connection DI alias
      *
      * If using Zend\Db, please specify the DI alias for the configured PDO 
-     * instance that EdpUser should use.
+     * instance that ZfcUser should use.
      */
     'zend_db_pdo' => 'CHANGEME',
 
@@ -28,7 +28,7 @@ $edpUserSettings = array(
      * Doctrine Entity Manager DI alias
      *
      * If using Doctrine2, please specify the DI alias for the Doctrine entity
-     * manager that EdpUser should use. If using SpiffyDoctrine, this is
+     * manager that ZfcUser should use. If using SpiffyDoctrine, this is
      * probably 'doctrine_em', which is the default value.
      */
     'doctrine_em' => 'doctrine_em',
@@ -37,9 +37,17 @@ $edpUserSettings = array(
      * User Model Entity Class
      *
      * Name of Entity class to use. Useful for using your own entity class 
-     * instead of the default one provided. Default is EdpUser\Model\User. 
+     * instead of the default one provided. Default is ZfcUser\Entity\User. 
      */
-    'user_model_class' => 'EdpUser\Entity\User',
+    'user_model_class' => 'ZfcUser\Entity\User',
+
+    /**
+     * UserMeta Model Entity Class
+     *
+     * Name of Entity class to use. Useful for using your own entity class 
+     * instead of the default one provided. Default is ZfcUser\Entity\UserMeta. 
+     */
+    'usermeta_model_class' => 'ZfcUser\Entity\UserMeta',
 
     /**
      * Enable Username 
@@ -59,7 +67,7 @@ $edpUserSettings = array(
      *
      * Accepted values: boolean true or false
      */
-    'enable_display_name' => false,
+    'enable_display_name' => true,
 
     /**
      * Require Activation
@@ -127,9 +135,9 @@ $edpUserSettings = array(
     /**
      * Blowfish Cost
      *
-     * Only used if `password_hash_algorithm` is set to blowfish. The number represents the base-2 logarithm 
-     * of the iteration count used for hashing. Default is 10 (about 10 hashes 
-     * per second on an i5). 
+     * Only used if `password_hash_algorithm` is set to blowfish. The number
+     * represents the base-2 logarithm of the iteration count used for hashing.
+     * Default is 10 (about 10 hashes per second on an i5). 
      *
      * Accepted values: integer between 4 and 31
      */
@@ -156,7 +164,7 @@ $edpUserSettings = array(
     'sha256_rounds' => 5000,
 
     /**
-     * End of EdpUser configuration
+     * End of ZfcUser configuration
      */
 );
 
@@ -164,13 +172,14 @@ $edpUserSettings = array(
  * You do not need to edit below this line
  */
 return array(
-    'edpuser' => $edpUserSettings,
+    'zfcuser' => $settings,
     'di' => array(
         'instance' => array(
             'alias' => array(
-                'edpuser_pdo'         => $edpUserSettings['zend_db_pdo'],
-                'edpuser_doctrine_em' => $edpUserSettings['doctrine_em'],
-                'edpuser_user_mapper' => ($edpUserSettings['db_abstraction'] === 'zend_db') ? 'EdpUser\Mapper\UserZendDb' : 'EdpUser\Mapper\UserDoctrine',
+                'zfcuser_pdo'             => $settings['zend_db_pdo'],
+                'zfcuser_doctrine_em'     => $settings['doctrine_em'],
+                'zfcuser_user_mapper'     => ($settings['db_abstraction'] === 'zend_db') ? 'ZfcUser\Mapper\UserZendDb' : 'ZfcUser\Mapper\UserDoctrine',
+                'zfcuser_usermeta_mapper' => ($settings['db_abstraction'] === 'zend_db') ? 'ZfcUser\Mapper\UserMetaZendDb' : 'ZfcUser\Mapper\UserMetaDoctrine',
             ),
         ),
     ),

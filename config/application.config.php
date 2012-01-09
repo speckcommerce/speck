@@ -4,8 +4,8 @@ return array(
         'Application',
         'SpiffyDoctrine',
         'SpiffyDoctrineORM',
-        'EdpUser',
-        'EdpCommon',
+        'ZfcUser',
+        'ZfcBase',
         'SpeckCatalog',
     ),
     'module_listener_options' => array( 
