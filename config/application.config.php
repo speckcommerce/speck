@@ -2,8 +2,6 @@
 return array(
     'modules' => array(
         'Application',
-        'SpiffyDoctrine',
-        'SpiffyDoctrineORM',
         'ZfcUser',
         'ZfcBase',
         'SpeckCatalog',
@@ -12,6 +10,7 @@ return array(
         'config_cache_enabled'    => false,
         'cache_dir'               => './data/cache',
         'module_paths' => array(
+            '../devmodules',
             './moduledev',
             './module',
             './vendor',
