@@ -12,9 +12,9 @@ The SpeckCommerce project was started by companies and developers who were
 unsatisfied with the overall quality of the
 [existing](http://www.magentocommerce.com/) [open](http://www.oscommerce.com/)
 [source](http://www.zen-cart.com/) [e-commerce](http://www.ecartcommerce.com/)
-[platforms](http://www.opencart.com/) written in PHP.  Legeraging our collective
+[platforms](http://www.opencart.com/) written in PHP.  Leveraging our collective
 e-commerce knowledge and years of experience building and working with
-e-commerce platforms, we're building what we hope to be the fastest, most
+e-commerce platforms, we're developing what we hope to be the fastest, most
 flexible, and well-built e-commerce platform built in PHP.
 
 A secondary goal of SpeckCommerce is to be an exemplary model of the powerful
@@ -28,11 +28,9 @@ should not have to worry about them. However, here is a list of the modules
 currently in use:
 
 * PHP 5.3.3+
-* An RDBMS supported by Doctrine2.
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
-* [EdpCommon](https://github.com/EvanDotPro/EdpCommon)
-* [EdpUser](https://github.com/EvanDotPro/EdpUser)
-* [SpiffyDoctrine](https://github.com/SpiffyJr/SpiffyDoctrine) (optional).
+* [ZfcBase](https://github.com/ZF-Commons/ZfcBase)
+* [ZfcUser](https://github.com/ZF-Commons/ZfcUser)
 
 
 Contributors

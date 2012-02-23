@@ -31,7 +31,7 @@ class Module implements AutoloaderProvider
         );
     }
 
-    public function getConfig($env = null)
+    public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
     }
@@ -39,43 +39,11 @@ class Module implements AutoloaderProvider
     public function initializeView($e)
     {
         $app          = $e->getParam('application');
+        $basePath     = $app->getRequest()->getBasePath();
         $locator      = $app->getLocator();
-        $config       = $e->getParam('config');
-        $view         = $this->getView($app);
-        $viewListener = $this->getViewListener($view, $config);
-        $app->events()->attachAggregate($viewListener);
-        $events       = StaticEventManager::getInstance();
-        $viewListener->registerStaticListeners($events, $locator);
-    }
-
-    protected function getViewListener($view, $config)
-    {
-        if ($this->viewListener instanceof View\Listener) {
-            return $this->viewListener;
-        }
-
-        $viewListener       = new View\Listener($view, $config->layout);
-        $viewListener->setDisplayExceptionsFlag($config->display_exceptions);
-
-        $this->viewListener = $viewListener;
-        return $viewListener;
-    }
-
-    protected function getView($app)
-    {
-        if ($this->view) {
-            return $this->view;
-        }
-
-        $di     = $app->getLocator();
-        $view   = $di->get('view');
-        $url    = $view->plugin('url');
-        $url->setRouter($app->getRouter());
-
-        $view->plugin('headTitle')->setSeparator(' - ')
-                                  ->setAutoEscape(false)
-                                  ->append('Speck Commerce');
-        $this->view = $view;
-        return $view;
+        $renderer     = $locator->get('Zend\View\Renderer\PhpRenderer');
+        $renderer->plugin('url')->setRouter($app->getRouter());
+        $renderer->doctype()->setDoctype('HTML5');
+        $renderer->plugin('basePath')->setBasePath($basePath);
     }
 }

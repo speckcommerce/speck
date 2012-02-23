@@ -1,9 +1,6 @@
 [submodule "vendor/ZendFramework"]
 	path = vendor/ZendFramework
 	url = git://github.com/zendframework/zf2.git
-[submodule "vendor/SpeckCatalog"]
-	path = vendor/SpeckCatalog
-	url = git://github.com/speckcommerce/SpeckCatalog.git
 [submodule "vendor/ZfcUser"]
 	path = vendor/ZfcUser
 	url = git://github.com/ZF-Commons/ZfcUser.git

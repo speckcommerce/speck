@@ -4,13 +4,14 @@ return array(
         'Application',
         'ZfcUser',
         'ZfcBase',
-        'SpeckCatalog',
+        //'SpeckCatalog',
+        //'SpeckBase',
     ),
     'module_listener_options' => array( 
         'config_cache_enabled'    => false,
         'cache_dir'               => './data/cache',
         'module_paths' => array(
-            '../devmodules',
+            //'../devmodules',
             './moduledev',
             './module',
             './vendor',
