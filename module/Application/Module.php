@@ -8,13 +8,17 @@ use Zend\Module\Manager,
 
 class Module implements AutoloaderProvider
 {
-    protected $view;
-    protected $viewListener;
-
     public function init(Manager $moduleManager)
     {
-        $events = StaticEventManager::getInstance();
-        $events->attach('bootstrap', 'bootstrap', array($this, 'initializeView'), 100);
+        $events       = $moduleManager->events();
+        $sharedEvents = $events->getSharedCollections();
+        $sharedEvents->attach('bootstrap', 'bootstrap', array($this, 'initializeView'), 100);
+        $sharedEvents->attach('ZfcUser', 'dispatch', array($this, 'onDispatch'), 100);
+    }
+
+    public function onDispatch($e)
+    {
+        var_dump($e);
     }
 
     public function getAutoloaderConfig()
@@ -42,8 +46,6 @@ class Module implements AutoloaderProvider
         $basePath     = $app->getRequest()->getBasePath();
         $locator      = $app->getLocator();
         $renderer     = $locator->get('Zend\View\Renderer\PhpRenderer');
-        $renderer->plugin('url')->setRouter($app->getRouter());
-        $renderer->doctype()->setDoctype('HTML5');
         $renderer->plugin('basePath')->setBasePath($basePath);
     }
 }
