@@ -1,0 +1,20 @@
+{
+    "name": "SpeckCommerce",
+    "description": "ecommerce platform built in zend framework 2 + common modules",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://github.com/speckcommerce/speck",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "dev-master",
+        "zf-commons/zfc-user": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Application": "module/Application/src"
+        }
+    }
+}
