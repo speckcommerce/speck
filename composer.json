@@ -10,6 +10,7 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-master",
+        "speckcommerce/SpeckCatalog": "dev-master",
         "zf-commons/zfc-user": "dev-master"
     },
     "autoload": {
