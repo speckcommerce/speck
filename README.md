@@ -23,14 +23,15 @@ new module system in Zend Framework 2.
 Requirements
 ------------
 
-The dependencies for SpeckCommerce are wired in with Git submodules so you
-should not have to worry about them. However, here is a list of the modules
-currently in use:
+The dependencies for SpeckCommerce are defined for Composer so you should not
+have to worry about them. However, here is a list of the modules currently in
+use:
 
 * PHP 5.3.3+
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
 * [ZfcBase](https://github.com/ZF-Commons/ZfcBase)
 * [ZfcUser](https://github.com/ZF-Commons/ZfcUser)
+* [SpeckCatalog](https://github.com/ZF-Commons/ZfcUser)
 
 
 Contributors
@@ -39,6 +40,7 @@ Contributors
 [Evan Coury] (https://github.com/EvanDotPro) (aka EvanDotPro)
 [Nigel Lundsten](https://github.com/nclundsten) (aka nlundsten)
 [Zachary Burnham](https://github.com/zburnham) (aka Evil_Otto)
+[Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
 
 Why Zend Framework 2?
 ---------------------
