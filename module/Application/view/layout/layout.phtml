@@ -1,4 +1,4 @@
-<?php 
+<?php
 $this->headTitle()->setSeparator(' - ')
                   ->setAutoEscape(false);
 
@@ -36,7 +36,7 @@ echo $this->doctype();
 
     <!-- Le styles -->
     <?php echo $this->headLink() ?>
-    
+
     <!-- Scripts -->
     <?php echo $this->headScript() ?>
 
@@ -75,9 +75,8 @@ echo $this->doctype();
               <form action="<?php echo $this->url('zfcuser/login') ?>" method="post" class="small-login-form form-inline pull-right">
                 <input name="identity" class="input-small" type="text" placeholder="Username">
                 <input name="credential" class="input-small" type="password" placeholder="Password">
-                <?php 
+                <?php
                     $loginForm = $this->zfcUserLoginWidget(array('render' => false))->loginForm;
-                    echo $this->formInput($loginForm->get('csrf'));
                     // I didn't really find a better way of doing this...
                     if (isset($_GET['redirect'])): ?>
                     <input type="hidden" name="redirect" value="<?php echo $_GET['redirect']; ?>" />
