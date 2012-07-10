@@ -61,7 +61,7 @@ echo $this->doctype();
           <?php if ($this->zfcUserIdentity()): /* echo $this->url('zfcuser') */ ?>
             <ul class="nav secondary-nav pull-right">
                 <li class="dropdown" id="account_menu" >
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#account_menu"><?php echo $this->zfcUserIdentity()->getDisplayName() . $this->gravatar($this->zfcUserIdentity()->getEmail(), array('img_size' => 16), array('style' => 'vertical-align:middle;padding-left:8px;')) ?></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#account_menu"><?php echo $this->zfcUserDisplayName() . $this->gravatar($this->zfcUserIdentity()->getEmail(), array('img_size' => 16), array('style' => 'vertical-align:middle;padding-left:8px;')) ?></a>
                     <ul class="dropdown-menu" style="padding-left:72px;padding-right:4px;height:auto !important;height:66px;min-height:66px;">
                         <li>
                             <div style="position:absolute;left:4px;top:4px;"><?php echo $this->gravatar($this->zfcUserIdentity()->getEmail(), array('img_size' => 64), array('style' => '')) ?></div>
