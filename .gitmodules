@@ -7,6 +7,6 @@
 [submodule "vendor/ZfcBase"]
 	path = vendor/ZfcBase
 	url = https://github.com/ZF-Commons/ZfcBase.git
-[submodule "vendor/zf2"]
-	path = vendor/zf2
+[submodule "vendor/ZF2"]
+	path = vendor/ZF2
 	url = https://github.com/zendframework/zf2.git
