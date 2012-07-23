@@ -4,6 +4,8 @@ return array(
         'Application',
         'ZfcUser',
         'ZfcBase',
+        'SpeckCart',
+        'SpeckCatalog',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
