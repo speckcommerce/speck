@@ -23,15 +23,14 @@ new module system in Zend Framework 2.
 Requirements
 ------------
 
-The dependencies for SpeckCommerce are defined for Composer so you should not
-have to worry about them. However, here is a list of the modules currently in
-use:
+The dependencies for SpeckCommerce are set up as Git submodules so you should not hav
 
 * PHP 5.3.3+
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
 * [ZfcBase](https://github.com/ZF-Commons/ZfcBase)
 * [ZfcUser](https://github.com/ZF-Commons/ZfcUser)
-* [SpeckCatalog](https://github.com/ZF-Commons/ZfcUser)
+* [SpeckCatalog](https://github.com/speckcommerce/SpeckCatalog)
+* [SpeckCart](https://github.com/speckcommerce/SpeckCart)
 
 
 Contributors
@@ -39,6 +38,7 @@ Contributors
 
 [Evan Coury] (https://github.com/EvanDotPro) (aka EvanDotPro)
 [Nigel Lundsten](https://github.com/nclundsten) (aka nlundsten)
+[Ben Youngblod](https://github.com/bjyoungblood) (aka bjy or bjyoungblood)
 [Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
 [Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
 
@@ -51,8 +51,11 @@ a project with goals such as ours.
 Installation
 ------------
 
-Installation instructions coming soon.
-
+* Run `git clone --recursive https://github.com/speckcommerce/speck.git` and
+  set up a vhost pointing to the public directory.
+* Copy `./config/autoload/database.local.php.dist` to
+  `./config/autoload/database.local.php` and update credentials as needed.
+* Import the DB schema from `./vendor/ZfcUser/data/schema.sql`
 
 Community
 ---------
