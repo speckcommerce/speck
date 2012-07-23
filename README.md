@@ -36,11 +36,11 @@ The dependencies for SpeckCommerce are set up as Git submodules so you should no
 Contributors
 ------------
 
-[Evan Coury] (https://github.com/EvanDotPro) (aka EvanDotPro)
-[Nigel Lundsten](https://github.com/nclundsten) (aka nlundsten)
-[Ben Youngblod](https://github.com/bjyoungblood) (aka bjy or bjyoungblood)
-[Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
-[Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
+* [Evan Coury] (https://github.com/EvanDotPro) (aka EvanDotPro)
+* [Nigel Lundsten](https://github.com/nclundsten) (aka nlundsten)
+* [Ben Youngblod](https://github.com/bjyoungblood) (aka bjy or bjyoungblood)
+* [Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
+* [Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
 
 Why Zend Framework 2?
 ---------------------
