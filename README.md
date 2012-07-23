@@ -57,6 +57,18 @@ Installation
   `./config/autoload/database.local.php` and update credentials as needed.
 * Import the DB schema from `./vendor/ZfcUser/data/schema.sql`
 
+Working on modules
+------------------
+
+We've made it easy to help us work on the various Speck modules without having to worry yourself with the details of Git submodules.
+
+0. Fork the module you wish to work on, on GitHub.
+1. Clone **your fork** of the module into the `./devmodules` directory. SpeckCommerce will now be using this copy of the module instead of the one under `./vendor`.
+2. cd into `./devmodules/{modulename}`, and run `git remote add upstream https://github.com/speckcommerce/{modulename}.git`
+3. Always work in branches and do not commit to master! See [this post](http://blog.evan.pro/keeping-a-clean-github-fork-part-1). There's also a nice [bash script](https://gist.github.com/1506822) to help keep your master branch up to date.
+
+
+
 Community
 ---------
 
