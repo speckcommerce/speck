@@ -41,6 +41,7 @@ Contributors
 * [Ben Youngblod](https://github.com/bjyoungblood) (aka bjy or bjyoungblood)
 * [Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
 * [Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
+* [Kathryn Reeve](https://github.com/BinaryKitten) (aka BinaryKitten)
 
 Why Zend Framework 2?
 ---------------------
