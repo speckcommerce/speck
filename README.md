@@ -39,7 +39,7 @@ Contributors
 
 [Evan Coury] (https://github.com/EvanDotPro) (aka EvanDotPro)
 [Nigel Lundsten](https://github.com/nclundsten) (aka nlundsten)
-[Zachary Burnham](https://github.com/zburnham) (aka Evil_Otto)
+[Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
 [Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
 
 Why Zend Framework 2?
