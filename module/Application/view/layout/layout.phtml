@@ -78,8 +78,10 @@ echo $this->doctype();
                 <?php
                     $loginForm = $this->zfcUserLoginWidget(array('render' => false))->loginForm;
                     // I didn't really find a better way of doing this...
-                    if (isset($_GET['redirect'])): ?>
+                if (isset($_GET['redirect'])): ?>
                     <input type="hidden" name="redirect" value="<?php echo $_GET['redirect']; ?>" />
+                <?php else: ?>
+                    <input type="hidden" name="redirect" value="<?php echo $_SERVER['REQUEST_URI']; ?>" />
                 <?php endif; ?>
                 <button class="btn btn-small" type="submit"><i class="icon-ok"></i> Sign in</button>
               </form>
