@@ -13,3 +13,9 @@
 [submodule "vendor/SpeckCart"]
 	path = vendor/SpeckCart
 	url = https://github.com/speckcommerce/SpeckCart.git
+[submodule "vendor/SpeckAddress"]
+	path = vendor/SpeckAddress
+	url = https://github.com/speckcommerce/SpeckAddress.git
+[submodule "vendor/SpeckUserAddress"]
+	path = vendor/SpeckUserAddress
+	url = https://github.com/speckcommerce/SpeckUserAddress.git
