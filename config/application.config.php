@@ -6,6 +6,8 @@ return array(
         'ZfcBase',
         'SpeckCart',
         'SpeckCatalog',
+        'SpeckAddress',
+        'SpeckUserAddress',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(

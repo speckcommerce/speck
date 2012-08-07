@@ -5,7 +5,8 @@ $this->headTitle()->setSeparator(' - ')
 $basePath = $this->basePath();
 $this->headLink()->appendStylesheet($basePath . '/css/bootstrap.min.css')
                  ->appendStylesheet($basePath . '/css/style.css')
-                 ->appendStylesheet($basePath . '/css/bootstrap-responsive.min.css');
+                 ->appendStylesheet($basePath . '/css/bootstrap-responsive.min.css')
+                 ->appendStylesheet($basePath . '/css/ui-lightness.css');
 
 $this->headLink(array(
             'rel'  => 'shortcut icon',
@@ -16,6 +17,7 @@ $this->headLink(array(
 // HTML5 shim, for IE6-8 support of HTML elements
 $this->headScript()
     //prepend , load in reverse
+    ->prependFile($basePath . '/js/jquery.select-to-autocomplete.js', 'text/javascript')
     ->prependFile($basePath . '/js/bootstrap-dropdown.js', 'text/javascript')
     ->prependFile($basePath . '/js/bootstrap-modal.js', 'text/javascript')
     ->prependFile($basePath . '/js/bootstrap-tab.js', 'text/javascript')
