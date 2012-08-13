@@ -70,7 +70,7 @@ THE SOFTWARE.
              this.select();
             });
       }
-      return $text_field.val( context.$select_field.find('option:selected:first').text() )
+      return $text_field.val( context.$select_field.find('option[selected="selected"]').text() )
         .insertAfter( context.$select_field );
     },
     extract_options: function( $select_field ) {
