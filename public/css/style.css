@@ -4,7 +4,7 @@ body {
 }
 
 .zf-green {
-    color: #68b604; 
+    color: #68b604;
 }
 
 .btn-success {
@@ -43,3 +43,45 @@ div.container a.brand {
     padding: 8px 20px 12px 40px;
 }
 */
+
+.tabnav {
+    border-bottom: 1px solid #DDDDDD;
+    margin: 10px 0;
+}
+.tabnav .tabnav-tabs {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.tabnav .tabnav-tabs > li {
+    display: inline-block;
+}
+
+.tabnav-tab {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #666666;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: -1px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+a.tabnav-tab {
+    color: #4183C4;
+    text-decoration: none;
+}
+.tabnav-tab.selected {
+    background-color: #FFFFFF;
+    border-color: #DDDDDD;
+    border-radius: 3px 3px 0 0;
+    color: #333333;
+    font-weight: bold;
+}
