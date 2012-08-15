@@ -8,6 +8,7 @@ return array(
         'SpeckCatalog',
         'SpeckAddress',
         'SpeckUserAddress',
+        'SpeckUserDashboard',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
