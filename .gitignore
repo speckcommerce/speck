@@ -1,1 +1,7 @@
+nbproject
+.idea
+.buildpath
+.project
+.settings/
+.DS_Store
 composer.lock
