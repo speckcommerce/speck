@@ -9,6 +9,7 @@ return array(
         'SpeckAddress',
         'SpeckUserAddress',
         'SpeckUserDashboard',
+        'ZfcAdmin',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(

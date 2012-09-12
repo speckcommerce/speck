@@ -22,3 +22,6 @@
 [submodule "vendor/SpeckUserDashboard"]
 	path = vendor/SpeckUserDashboard
 	url = https://github.com/speckcommerce/SpeckUserDashboard.git
+[submodule "vendor/ZfcAdmin"]
+	path = vendor/ZfcAdmin
+	url = https://github.com/juriansluiman/ZfcAdmin.git
