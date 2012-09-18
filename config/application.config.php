@@ -9,6 +9,8 @@ return array(
         'SpeckAddress',
         'SpeckUserAddress',
         'SpeckUserDashboard',
+        'SpeckCheckout',
+        'SpeckContact',
         'ZfcAdmin',
     ),
     'module_listener_options' => array(

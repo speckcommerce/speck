@@ -25,3 +25,9 @@
 [submodule "vendor/ZfcAdmin"]
 	path = vendor/ZfcAdmin
 	url = https://github.com/juriansluiman/ZfcAdmin.git
+[submodule "vendor/SpeckCheckout"]
+	path = vendor/SpeckCheckout
+	url = git://github.com/speckcommerce/SpeckCheckout.git
+[submodule "vendor/SpeckContact"]
+	path = vendor/SpeckContact
+	url = git://github.com/speckcommerce/SpeckContact.git
