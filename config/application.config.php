@@ -4,7 +4,7 @@ return array(
         'Application',
         'ZfcUser',
         'ZfcBase',
-        'SpeckMultiSite',
+        'SpeckMultisite',
         'SpeckCart',
         'SpeckCatalog',
         'SpeckAddress',
