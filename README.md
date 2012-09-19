@@ -56,7 +56,12 @@ Installation
   set up a vhost pointing to the public directory.
 * Copy `./config/autoload/database.local.php.dist` to
   `./config/autoload/database.local.php` and update credentials as needed.
-* Import the DB schema from `./vendor/ZfcUser/data/schema.sql`
+* Import the DB schemas from:
+ * `./vendor/SpeckAddress/data/schema.sql`
+ * `./vendor/SpeckCart/data/schema.sql`
+ * `./vendor/SpeckCatalog/data/schema.sql`
+ * `./vendor/SpeckUserAddress/data/schema.sql`
+ * `./vendor/ZfcUser/data/schema.sql`
 
 Working on modules
 ------------------
