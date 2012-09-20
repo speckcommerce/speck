@@ -1,23 +1,28 @@
-echo -n "SQL user (leave blank for 'root'): "
-read user
-if [ -z "$user" ]; then
-    user='root'
-fi
-
-echo -n "password for SQL user '$user': "
-read pass
-
-echo -n "database name (leave blank for 'speck'): "
+echo "database name - this script assumes the database already exists (ctrl-c to abort)"
+echo -n "(leave blank for 'speck'): "
 read dbname
 if [ -z "$dbname" ]; then
     dbname='speck'
 fi
 
+echo "SQL user - this use must already exist and have permissions to create/modify tables in '$dbname' (ctrl-c to abort)"
+echo -n "(leave blank for 'speck'): "
+read user
+if [ -z "$user" ]; then
+    user='speck'
+fi
+
+echo "password for SQL user '$user'"
+echo -n "(leave blank for 'speck'): "
+read pass
+if [ -z "$pass" ]; then
+    pass='speck'
+fi
+
+
 export dir=`pwd`
 
 cd $dir && git submodule update --init
-mysql -u$user -p$pass -e "drop schema if exists $dbname"
-mysql -u$user -p$pass -e "create schema if not exists $dbname"
 cd $dir/vendor
 ls -d */ | tr ' ' '\n' > $dir/devmodules/tempdirlist
 cat $dir/devmodules/tempdirlist | while read line; do
@@ -28,7 +33,7 @@ cat $dir/devmodules/tempdirlist | while read line; do
         cd $dir/devmodules/$line/data
         if [ -r 'schema.sql' ]
         then
-            cat 'schema.sql' | mysql -uroot -pgq9wm2 $dbname
+            cat 'schema.sql' | mysql -u$user -p$pass $dbname
         fi
     fi
 done
@@ -39,7 +44,7 @@ cat $dir/devmodules/tempdirlist | while read line; do
         cd $dir/devmodules/$line/data
         if [ -r 'alter.sql' ]
         then
-            cat 'alter.sql' | mysql -uroot -pgq9wm2 $dbname
+            cat 'alter.sql' | mysql -u$user -p$pass $dbname
         fi
     fi
 done
