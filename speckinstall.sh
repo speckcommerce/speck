@@ -16,13 +16,14 @@ fi
 git submodule update --init
 mysql -u$user -p$pass -e "drop schema if exists $dbname"
 mysql -u$user -p$pass -e "create schema if not exists $dbname"
-cp vendor/* devmodules/
+cp vendor/* devmodules/ -r
 cd devmodules
 ls -d */ | tr ' ' '\n' > tempdirlist
 cat tempdirlist | while read line; do
     cd $line
     pwd
     git pull origin master
+    git checkout master
     if [ -d data ]
     then
         cd data
@@ -48,5 +49,5 @@ cat tempdirlist | while read line; do
     cd ../
 done
 rm tempdirlist
-cd ../../
+cd ../
 php dbconfig.php $user $pass $dbname
