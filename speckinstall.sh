@@ -16,8 +16,7 @@ fi
 git submodule update --init
 mysql -u$user -p$pass -e "drop schema if exists $dbname"
 mysql -u$user -p$pass -e "create schema if not exists $dbname"
-cp vendor/* devmodules/ -r
-cd devmodules
+cd vendor
 ls -d */ | tr ' ' '\n' > tempdirlist
 cat tempdirlist | while read line; do
     cd $line
@@ -50,4 +49,6 @@ cat tempdirlist | while read line; do
 done
 rm tempdirlist
 cd ../
+cp vendor/* devmodules/ -r
+git submodule update
 php dbconfig.php $user $pass $dbname
