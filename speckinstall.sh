@@ -15,6 +15,7 @@ fi
 
 export dir=`pwd`
 
+cd $dir && git submodule update --init
 mysql -u$user -p$pass -e "drop schema if exists $dbname"
 mysql -u$user -p$pass -e "create schema if not exists $dbname"
 cd $dir/vendor
