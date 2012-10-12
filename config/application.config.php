@@ -10,6 +10,7 @@ return array(
         'SpeckAddress',
         'SpeckUserAddress',
         //'SpeckUserDashboard',
+        'SpeckImageUploader',
         'SpeckCheckout',
         'SpeckContact',
         'ZfcAdmin',
