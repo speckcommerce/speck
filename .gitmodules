@@ -27,13 +27,13 @@
 	url = https://github.com/juriansluiman/ZfcAdmin.git
 [submodule "vendor/SpeckCheckout"]
 	path = vendor/SpeckCheckout
-	url = git://github.com/speckcommerce/SpeckCheckout.git
+	url = https://github.com/speckcommerce/SpeckCheckout.git
 [submodule "vendor/SpeckContact"]
 	path = vendor/SpeckContact
-	url = git://github.com/speckcommerce/SpeckContact.git
+	url = https://github.com/speckcommerce/SpeckContact.git
 [submodule "vendor/SpeckMultisite"]
 	path = vendor/SpeckMultisite
 	url = https://github.com/speckcommerce/SpeckMultisite.git
 [submodule "vendor/SpeckImageUploader"]
 	path = vendor/SpeckImageUploader
-	url = git@github.com:speckcommerce/SpeckImageUploader.git
+	url = https@github.com:speckcommerce/SpeckImageUploader.git
