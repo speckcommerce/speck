@@ -17,6 +17,7 @@ return array(
         'SpeckRandomProducts',
         'AssetManager',
         'Assetic',
+        'SwmCatalogLayout',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
