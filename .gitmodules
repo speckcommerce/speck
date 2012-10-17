@@ -36,4 +36,4 @@
 	url = https://github.com/speckcommerce/SpeckMultisite.git
 [submodule "vendor/SpeckImageUploader"]
 	path = vendor/SpeckImageUploader
-	url = https@github.com:speckcommerce/SpeckImageUploader.git
+	url = https://github.com/speckcommerce/SpeckImageUploader.git
