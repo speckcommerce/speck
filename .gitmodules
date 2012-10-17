@@ -37,3 +37,12 @@
 [submodule "vendor/SpeckImageUploader"]
 	path = vendor/SpeckImageUploader
 	url = https://github.com/speckcommerce/SpeckImageUploader.git
+[submodule "vendor/Assetic/assetic"]
+	path = vendor/Assetic/assetic
+	url = https://github.com/kriswallsmith/assetic.git
+[submodule "vendor/SpeckRandomProducts"]
+	path = vendor/SpeckRandomProducts
+	url = https://github.com/speckcommerce/SpeckRandomProducts.git
+[submodule "vendor/AssetManager"]
+	path = vendor/AssetManager
+	url = https://github.com/RWOverdijk/AssetManager.git

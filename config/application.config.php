@@ -14,6 +14,9 @@ return array(
         'SpeckCheckout',
         'SpeckContact',
         'ZfcAdmin',
+        'SpeckRandomProducts',
+        'AssetManager',
+        'Assetic',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
