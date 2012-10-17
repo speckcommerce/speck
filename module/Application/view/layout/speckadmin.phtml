@@ -1,0 +1,94 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('ZF2 '. $this->translate('ZfcAdmin - Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+    <!-- Le styles -->
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+                    ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                    ->prependStylesheet($this->basePath() . '/css/style.css')
+                    ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+    <!-- Scripts -->
+    <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                  ->prependFile($this->basePath() . '/js/jquery-1.7.2.min.js') ?>
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="<?php echo $this->url('zfcadmin') ?>"><?php echo $this->translate('ZfcAdmin') ?></a>
+          <div class="nav-collapse">
+            <?php echo $this->navigation('admin_navigation')
+                            ->menu()
+                            ->setUlClass('nav')
+                            ->setMaxDepth(0)
+                            ->setRenderInvisible(false)?>
+
+          <?php if ($this->zfcUserIdentity()): /* echo $this->url('zfcuser') */ ?>
+            <ul class="nav secondary-nav pull-right">
+                <li class="dropdown" id="account_menu" >
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#account_menu"><?php echo $this->zfcUserDisplayName() . $this->gravatar($this->zfcUserIdentity()->getEmail(), array('img_size' => 16), array('style' => 'vertical-align:middle;padding-left:8px;')) ?></a>
+                    <ul class="dropdown-menu" style="padding-left:72px;padding-right:4px;height:auto !important;height:66px;min-height:66px;">
+                        <li>
+                            <div style="position:absolute;left:4px;top:4px;"><?php echo $this->gravatar($this->zfcUserIdentity()->getEmail(), array('img_size' => 64), array('style' => '')) ?></div>
+                            <a href="<?php echo $this->url('zfcuser') ?>"><i class="icon-user"></i> Account Information</a>
+                        </li>
+                        <li><a href="<?php echo $this->url('zfcuser/logout') ?>"><i class="icon-off"></i> Sign Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+          <?php else: ?>
+              <form action="<?php echo $this->url('zfcuser/login') ?>" method="post" class="small-login-form form-inline pull-right">
+                <input name="identity" class="input-small" type="text" placeholder="Username">
+                <input name="credential" class="input-small" type="password" placeholder="Password">
+                <?php
+                    $loginForm = $this->zfcUserLoginWidget(array('render' => false))->loginForm;
+                    // I didn't really find a better way of doing this...
+                if (isset($_GET['redirect'])): ?>
+                    <input type="hidden" name="redirect" value="<?php echo $_GET['redirect']; ?>" />
+                <?php else: ?>
+                    <input type="hidden" name="redirect" value="<?php echo $_SERVER['REQUEST_URI']; ?>" />
+                <?php endif; ?>
+                <button class="btn btn-small" type="submit"><i class="icon-ok"></i> Sign in</button>
+              </form>
+          <?php endif; ?>
+
+
+
+
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <?php echo $this->content; ?>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2005 - 2012 by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  <?php echo $this->inlineScript() ?>
+  </body>
+</html>
+
