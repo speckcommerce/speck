@@ -26,25 +26,31 @@ cd $dir && git submodule update --init
 cd $dir/vendor
 ls -d */ | tr ' ' '\n' > $dir/devmodules/tempdirlist
 cat $dir/devmodules/tempdirlist | while read line; do
-    git clone $dir/vendor/$line $dir/devmodules/$line
-    cd $dir/devmodules/$line && git pull origin master && git checkout master
-    if [ -d data ]
+    if [ -d $dir/vendor/$line/.git ]
     then
-        cd $dir/devmodules/$line/data
-        if [ -r 'schema.sql' ]
+        git clone $dir/vendor/$line $dir/devmodules/$line
+        cd $dir/devmodules/$line && git pull origin master && git checkout master
+        if [ -d data ]
         then
-            cat 'schema.sql' | mysql -u$user -p$pass $dbname
+            cd $dir/devmodules/$line/data
+            if [ -r 'schema.sql' ]
+            then
+                cat 'schema.sql' | mysql -u$user -p$pass $dbname
+            fi
         fi
     fi
 done
 cat $dir/devmodules/tempdirlist | while read line; do
-    cd $dir/devmodules/$line
-    if [ -d data ]
+    if [ -d $dir/vendor/$line/.git ]
     then
-        cd $dir/devmodules/$line/data
-        if [ -r 'alter.sql' ]
+        cd $dir/devmodules/$line
+        if [ -d data ]
         then
-            cat 'alter.sql' | mysql -u$user -p$pass $dbname
+            cd $dir/devmodules/$line/data
+            if [ -r 'alter.sql' ]
+            then
+                cat 'alter.sql' | mysql -u$user -p$pass $dbname
+            fi
         fi
     fi
 done
