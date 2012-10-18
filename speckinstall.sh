@@ -48,6 +48,6 @@ cat $dir/devmodules/tempdirlist | while read line; do
         fi
     fi
 done
-rm $dir/devmodules/tempdirlist
+#rm $dir/devmodules/tempdirlist
 cd $dir
 php dbconfig.php $user $pass $dbname
