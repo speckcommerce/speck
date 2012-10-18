@@ -59,7 +59,12 @@ echo $this->doctype();
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="<?php echo $this->url('home') ?>">Home</a></li>
-            </ul>
+              </ul>
+          <?php echo $this->navigation('admin_navigation')
+                            ->menu()
+                            ->setUlClass('nav')
+                            ->setMaxDepth(0)
+                            ->setRenderInvisible(false)?>
           <?php if ($this->zfcUserIdentity()): /* echo $this->url('zfcuser') */ ?>
             <ul class="nav secondary-nav pull-right">
                 <li class="dropdown" id="account_menu" >
