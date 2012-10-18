@@ -26,7 +26,8 @@ cd $dir && git submodule update --init
 cd $dir/vendor
 ls -d */ | tr ' ' '\n' > $dir/devmodules/tempdirlist
 cat $dir/devmodules/tempdirlist | while read line; do
-    if [ -d $dir/vendor/$line/.git ]
+    cd $dir/vendor/$line
+    if [ -r ".git" ]
     then
         git clone $dir/vendor/$line $dir/devmodules/$line
         cd $dir/devmodules/$line && git pull origin master && git checkout master
@@ -41,7 +42,8 @@ cat $dir/devmodules/tempdirlist | while read line; do
     fi
 done
 cat $dir/devmodules/tempdirlist | while read line; do
-    if [ -d $dir/vendor/$line/.git ]
+    cd $dir/vendor/$line
+    if [ -r ".git" ]
     then
         cd $dir/devmodules/$line
         if [ -d data ]
@@ -54,6 +56,6 @@ cat $dir/devmodules/tempdirlist | while read line; do
         fi
     fi
 done
-#rm $dir/devmodules/tempdirlist
+rm $dir/devmodules/tempdirlist
 cd $dir
 php dbconfig.php $user $pass $dbname
