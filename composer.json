@@ -1,0 +1,91 @@
+{
+    "name": "speckcommerce",
+    "description": "Open Source E-Commerce Platform.  PHP, Zend Framework 2, ZF2 Modules",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "SpeckCommerce Authors",
+            "email": "author@speckcommerce.org"
+        }
+    ],
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckCatalog"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckPaypal"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckPayPaypal"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckPayAuthnet"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckCheckout"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckOrder"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckImageUploader"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckRandomProducts"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckUserAddress"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckMultisite"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckAddress"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckPI"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckCart"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckContact"
+        },
+        {
+            "type": "vcs",
+            "url": "http://github.com/SpeckCommerce/SpeckUserDashboard"
+        }
+    ],
+    "require": {
+        "speckcommerce/speck-catalog":         "dev",
+        "speckcommerce/speck-paypal":          "dev",
+        "speckcommerce/speck-pay-paypal":      "dev",
+        "speckcommerce/speck-pay-authnet":     "dev",
+        "speckcommerce/speck-checkout":        "dev",
+        "speckcommerce/speck-order":           "dev",
+        "speckcommerce/speck-image-uploader":  "dev",
+        "speckcommerce/speck-random-products": "dev",
+        "speckcommerce/speck-user-address":    "dev",
+        "speckcommerce/speck-multisite":       "dev",
+        "speckcommerce/speck-address":         "dev",
+        "speckcommerce/speck-p-i":             "dev",
+        "speckcommerce/speck-cart":            "dev",
+        "speckcommerce/speck-contact":         "dev",
+        "speckcommerce/speck-user-dashboard":  "dev"
+    }
+}
