@@ -13,7 +13,9 @@
         {
             "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckCatalog"
-        },
+        }
+    ],
+    "future-repositories": [
         {
             "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckPaypal"
@@ -71,21 +73,24 @@
             "url": "http://github.com/SpeckCommerce/SpeckUserDashboard"
         }
     ],
+
     "require": {
-        "speckcommerce/speck-catalog":         "dev",
-        "speckcommerce/speck-paypal":          "dev",
-        "speckcommerce/speck-pay-paypal":      "dev",
-        "speckcommerce/speck-pay-authnet":     "dev",
-        "speckcommerce/speck-checkout":        "dev",
-        "speckcommerce/speck-order":           "dev",
-        "speckcommerce/speck-image-uploader":  "dev",
-        "speckcommerce/speck-random-products": "dev",
-        "speckcommerce/speck-user-address":    "dev",
-        "speckcommerce/speck-multisite":       "dev",
-        "speckcommerce/speck-address":         "dev",
-        "speckcommerce/speck-p-i":             "dev",
-        "speckcommerce/speck-cart":            "dev",
-        "speckcommerce/speck-contact":         "dev",
-        "speckcommerce/speck-user-dashboard":  "dev"
+        "speckcommerce/speck-catalog":         "dev-master"
+    },
+    "future-require": {
+        "speckcommerce/speck-paypal":          "dev-master",
+        "speckcommerce/speck-pay-paypal":      "dev-master",
+        "speckcommerce/speck-pay-authnet":     "dev-master",
+        "speckcommerce/speck-checkout":        "dev-master",
+        "speckcommerce/speck-order":           "dev-master",
+        "speckcommerce/speck-image-uploader":  "dev-master",
+        "speckcommerce/speck-random-products": "dev-master",
+        "speckcommerce/speck-user-address":    "dev-master",
+        "speckcommerce/speck-multisite":       "dev-master",
+        "speckcommerce/speck-address":         "dev-master",
+        "speckcommerce/speck-p-i":             "dev-master",
+        "speckcommerce/speck-cart":            "dev-master",
+        "speckcommerce/speck-contact":         "dev-master",
+        "speckcommerce/speck-user-dashboard":  "dev-master"
     }
 }
