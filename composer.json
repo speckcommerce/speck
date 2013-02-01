@@ -8,72 +8,64 @@
             "email": "author@speckcommerce.org"
         }
     ],
-
     "repositories": [
         {
-            "type": "vcs",
-            "url": "http://github.com/SpeckCommerce/SpeckCatalog"
+            "type":"package",
+            "package": {
+                "name": "speckcommerce/speckcatalog",
+                "version":"dev",
+                "source": {
+                    "url": "https://github.com/speckcommerce/SpeckCatalog.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
         }
     ],
     "future-repositories": [
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckPaypal"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckPayPaypal"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckPayAuthnet"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckCheckout"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckOrder"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckImageUploader"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckRandomProducts"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckUserAddress"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckMultisite"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckAddress"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckPI"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckCart"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckContact"
         },
         {
-            "type": "vcs",
             "url": "http://github.com/SpeckCommerce/SpeckUserDashboard"
         }
     ],
-
     "require": {
         "speckcommerce/speck-catalog":         "dev-master"
     },
