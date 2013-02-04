@@ -1,6 +1,7 @@
 <?php
 return array(
     'modules' => array(
+        'AtPhpSettings',
         'Application',
         'ZfcUser',
         'ZfcBase',
