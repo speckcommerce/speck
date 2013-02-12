@@ -23,7 +23,7 @@ new module system in Zend Framework 2.
 Requirements
 ------------
 
-The dependencies for SpeckCommerce are set up as Git submodules so you should not hav
+The dependencies for SpeckCommerce are set up as Git submodules so you should not have to mess with dependencies.
 
 * PHP 5.3.3+
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
@@ -42,6 +42,8 @@ Contributors
 * [Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
 * [Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
 * [Kathryn Reeve](https://github.com/BinaryKitten) (aka BinaryKitten)
+
+If you've contributed and we haven't updated the list, please feel free to submit a pull request adding your name here!
 
 Why Zend Framework 2?
 ---------------------
@@ -62,6 +64,8 @@ Installation
  * `./vendor/SpeckCatalog/data/schema.sql`
  * `./vendor/SpeckUserAddress/data/schema.sql`
  * `./vendor/ZfcUser/data/schema.sql`
+ 
+You may get a constraint error when importing the schema files -- try updating all of the submodules, or using the installer bash script if you're on Mac or Linux until we get it cleaned up.
 
 Working on modules
 ------------------
