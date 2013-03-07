@@ -79,7 +79,7 @@
         "speckcommerce/speck-random-products" : "dev-master",
         "speckcommerce/speck-order"           : "dev-master",
         "zf-commons/zfc-admin"                : "dev-master",
-        "rwoverdijk/assetmanager"             : "dev-master"
+        "rwoverdijk/assetmanager"             : "dev-master",
         "atukai/at-php-settings"              : "dev-master"
     },
     "blah" : {
