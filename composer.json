@@ -10,79 +10,78 @@
     ],
     "repositories": [
         {
-            "type":"package",
-            "package": {
-                "name": "speckcommerce/speckcatalog",
-                "version":"dev",
-                "source": {
-                    "url": "https://github.com/speckcommerce/SpeckCatalog.git",
-                    "type": "git",
-                    "reference":"master"
-                }
-            }
-        }
-    ],
-    "future-repositories": [
-        {
-            "url": "http://github.com/SpeckCommerce/SpeckPaypal"
+            "type": "vcs",
+            "url": "https://github.com/zendframework/zf2"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckPayPaypal"
+            "type": "vcs",
+            "url": "https://github.com/ZF-Commons/ZfcUser"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckPayAuthnet"
+            "type": "vcs",
+            "url": "https://github.com/ZF-Commons/ZfcBase"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckCheckout"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckInstall"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckOrder"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckCart"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckImageUploader"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckCatalog"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckRandomProducts"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckAddress"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckUserAddress"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckImageUploader"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckMultisite"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckCheckout"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckAddress"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckRandomProducts"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckPI"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckUserAddress"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckCart"
+            "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckOrder"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckContact"
+            "type": "vcs",
+            "url": "https://github.com/atukai/AtPhpSettings"
         },
         {
-            "url": "http://github.com/SpeckCommerce/SpeckUserDashboard"
+            "type": "vcs",
+            "url": "https://github.com/RWOverdijk/AssetManager"
         }
     ],
     "require": {
-        "speckcommerce/speck-catalog":         "dev-master"
+        "php"                                 : "5.4.*",
+        "zendframework/zendframework"         : "2.*",
+        "speckcommerce/speck-install"         : "dev-master",
+        "speckcommerce/speck-catalog"         : "dev-master",
+        "speckcommerce/speck-cart"            : "dev-master",
+        "speckcommerce/speck-address"         : "dev-master",
+        "speckcommerce/speck-user-address"    : "dev-master",
+        "speckcommerce/speck-checkout"        : "dev-master",
+        "speckcommerce/speck-image-uploader"  : "dev-master",
+        "speckcommerce/speck-random-products" : "dev-master",
+        "speckcommerce/speck-order"           : "dev-master",
+        "zf-commons/zfc-admin"                : "dev-master",
+        "rwoverdijk/assetmanager"             : "dev-master"
+        "atukai/at-php-settings"              : "dev-master"
     },
-    "future-require": {
-        "speckcommerce/speck-paypal":          "dev-master",
-        "speckcommerce/speck-pay-paypal":      "dev-master",
-        "speckcommerce/speck-pay-authnet":     "dev-master",
-        "speckcommerce/speck-checkout":        "dev-master",
-        "speckcommerce/speck-order":           "dev-master",
-        "speckcommerce/speck-image-uploader":  "dev-master",
-        "speckcommerce/speck-random-products": "dev-master",
-        "speckcommerce/speck-user-address":    "dev-master",
-        "speckcommerce/speck-multisite":       "dev-master",
-        "speckcommerce/speck-address":         "dev-master",
-        "speckcommerce/speck-p-i":             "dev-master",
-        "speckcommerce/speck-cart":            "dev-master",
-        "speckcommerce/speck-contact":         "dev-master",
-        "speckcommerce/speck-user-dashboard":  "dev-master"
+    "blah" : {
     }
 }

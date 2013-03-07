@@ -1,6 +1,8 @@
 <?php
 return array(
     'modules' => array(
+        'SpeckInstall',
+        'AtPhpSettings',
         'Application',
         'ZfcUser',
         'ZfcBase',
@@ -13,6 +15,7 @@ return array(
         'SpeckImageUploader',
         'SpeckCheckout',
         'SpeckContact',
+        'SpeckOrder',
         'ZfcAdmin',
         'SpeckRandomProducts',
         'AssetManager',
