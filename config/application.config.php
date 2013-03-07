@@ -1,9 +1,10 @@
 <?php
 return array(
     'modules' => array(
-        'SpeckInstall',
+        //'SpeckInstall',
         'AtPhpSettings',
         'Application',
+        'EdpSubLayout',
         'ZfcUser',
         'ZfcBase',
         //'SpeckMultisite',

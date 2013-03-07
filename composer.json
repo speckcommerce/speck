@@ -78,6 +78,7 @@
         "speckcommerce/speck-image-uploader"  : "dev-master",
         "speckcommerce/speck-random-products" : "dev-master",
         "speckcommerce/speck-order"           : "dev-master",
+        "evandotpro/edp-sub-layout"           : "dev-master",
         "zf-commons/zfc-admin"                : "dev-master",
         "rwoverdijk/assetmanager"             : "dev-master",
         "atukai/at-php-settings"              : "dev-master"
