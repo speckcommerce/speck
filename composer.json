@@ -63,6 +63,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/EvanDotPro/EdpSubLayout"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/RWOverdijk/AssetManager"
         }
     ],
