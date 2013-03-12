@@ -93,7 +93,7 @@
         "speckcommerce/speck-multisite"       : "dev-master",
         "evandotpro/edp-sub-layout"           : "dev-master",
         "zf-commons/zfc-admin"                : "dev-master",
-        "widmogrod/zf2-assetic-module"        : "dev-master",
+        "widmogrod/zf2-assetic-module"        : "1.*",
         "rwoverdijk/assetmanager"             : "dev-master",
         "atukai/at-php-settings"              : "dev-master"
     }
