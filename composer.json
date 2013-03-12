@@ -71,10 +71,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/RWOverdijk/AssetManager"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/widmogrod/zf2-assetic-module.git"
         }
     ],
@@ -93,8 +89,7 @@
         "speckcommerce/speck-multisite"       : "dev-master",
         "evandotpro/edp-sub-layout"           : "dev-master",
         "zf-commons/zfc-admin"                : "dev-master",
-        "widmogrod/zf2-assetic-module"        : "1.*",
-        "rwoverdijk/assetmanager"             : "dev-master",
+        "widmogrod/zf2-assetic-module"        : "dev-master",
         "atukai/at-php-settings"              : "dev-master"
     }
 }
