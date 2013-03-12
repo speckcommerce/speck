@@ -19,8 +19,7 @@ return array(
         'SpeckOrder',
         'ZfcAdmin',
         'SpeckRandomProducts',
-        'AssetManager',
-        'Assetic',
+        'AsseticBundle',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
