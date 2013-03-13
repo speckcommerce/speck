@@ -2,20 +2,20 @@
 return array(
     'router' => array(
         'routes' => array(
-            'default' => array(
-                'type'    => 'Zend\Mvc\Router\Http\Segment',
-                'options' => array(
-                    'route'    => '/[:controller[/:action]]',
-                    'constraints' => array(
-                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                    ),
-                    'defaults' => array(
-                        'controller' => 'index',
-                        'action'     => 'index',
-                    ),
-                ),
-            ),
+            //'default' => array(
+            //    'type'    => 'Zend\Mvc\Router\Http\Segment',
+            //    'options' => array(
+            //        'route'    => '/[:controller[/:action]]',
+            //        'constraints' => array(
+            //            'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+            //            'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
+            //        ),
+            //        'defaults' => array(
+            //            'controller' => 'index',
+            //            'action'     => 'index',
+            //        ),
+            //    ),
+            //),
             'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
@@ -64,70 +64,4 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
-'assetic_configuration' => array(
-    'routes' => array(
-        'home' => array(
-            // Is disabled because 'default' option key will mix with this configuration section
-            // and provide @base_css assets.
-            // '@base_css',
-            '@base_js',
-        ),
-    ),
-
-    'default' => array(
-        'assets' => array(
-            '@base_css',
-        ),
-        'options' => array(
-            'mixin' => true
-        ),
-    ),
-
-    'modules' => array(
-        /*
-         * Application moodule - assets configuration
-         */
-        'application' => array(
-
-            # module root path for yout css and js files
-            'root_path' => __DIR__ . '/../../../public',
-
-            # collection od assets
-            'collections' => array(
-
-                'base_css' => array(
-                    'assets' => array(
-                        'css/bootstrap-responsive.min.css',
-                        'css/style.css',
-                        'css/bootstrap.min.css'
-                    ),
-                    'filters' => array(
-                        'CssRewriteFilter' => array(
-                            'name' => 'Assetic\Filter\CssRewriteFilter'
-                        )
-                    ),
-                    'options' => array(),
-                ),
-
-                'base_js' => array(
-                    'assets' => array(
-                        'js/html5.js',
-                        'js/jquery.min.js',
-                        'js/bootstrap.min.js',
-                    )
-                ),
-
-                'base_images' => array(
-                    'assets' => array(
-                        'images/*.png',
-                        'images/*.ico',
-                    ),
-                    'options' => array(
-                        'move_raw' => true,
-                    )
-                ),
-            ),
-        ),
-    )
-)
 );
