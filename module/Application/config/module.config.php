@@ -32,6 +32,13 @@ return array(
         'factories' => array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
         ),
+        'initializers' => array(
+            function ($instance, $sm) {
+                if ($instance instanceof Zend\Db\Adapter\AdapterAwareInterface) {
+                    return $instance->setDbAdapter($sm->get('Zend\Db\Adapter\Adapter'));
+                }
+            }
+        ),
     ),
     'translator' => array(
         'locale' => 'en_US',
