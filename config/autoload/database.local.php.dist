@@ -12,13 +12,6 @@ return array(
         'factories' => array(
             'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
         ),
-        'initializers' => array(
-            function ($instance, $sm) {
-                if ($instance instanceof Zend\Db\Adapter\AdapterAwareInterface) {
-                    return $instance->setDbAdapter($sm->get('Zend\Db\Adapter\Adapter'));
-                }
-            }
-        ),
     ),
     'db' => array(
         'driver'         => 'pdo',
