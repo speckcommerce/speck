@@ -88,7 +88,7 @@
         "speckcommerce/speck-order"           : "dev-master",
         "speckcommerce/speck-multisite"       : "dev-master",
         "evandotpro/edp-sub-layout"           : "dev-master",
-        "zf-commons/zfc-admin"                : "dev-master",
+        "zf-commons/zfc-admin"                : "0.1.*",
         "rwoverdijk/assetmanager"             : "dev-master",
         "atukai/at-php-settings"              : "dev-master"
     }
