@@ -35,6 +35,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/speckcommerce/SpeckCatalogCart"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/speckcommerce/SpeckAddress"
         },
         {
@@ -80,6 +84,7 @@
         "speckcommerce/speck-install"         : "dev-master",
         "speckcommerce/speck-catalog"         : "dev-master",
         "speckcommerce/speck-cart"            : "dev-master",
+        "speckcommerce/speck-catalog-cart"    : "dev-master",
         "speckcommerce/speck-address"         : "dev-master",
         "speckcommerce/speck-user-address"    : "dev-master",
         "speckcommerce/speck-checkout"        : "dev-master",

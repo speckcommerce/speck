@@ -10,6 +10,7 @@ return array(
         'SpeckMultisite',
         'SpeckCart',
         'SpeckCatalog',
+        'SpeckCatalogCart',
         'SpeckAddress',
         'SpeckUserAddress',
         //'SpeckUserDashboard',
