@@ -54,31 +54,13 @@ a project with goals such as ours.
 Installation
 ------------
 
-* Run `git clone --recursive https://github.com/speckcommerce/speck.git` and
+* Run `git clone https://github.com/speckcommerce/speck.git` and
   set up a vhost pointing to the public directory.
-* Copy `./config/autoload/database.local.php.dist` to
-  `./config/autoload/database.local.php` and update credentials as needed.
-* Import the DB schemas from:
- * `./vendor/SpeckAddress/data/schema.sql`
- * `./vendor/SpeckCart/data/schema.sql`
- * `./vendor/SpeckCatalog/data/schema.sql`
- * `./vendor/SpeckUserAddress/data/schema.sql`
- * `./vendor/ZfcUser/data/schema.sql`
+* Install with Composer -- http://getcomposer.org
+  * `cd speck && ../composer.phar install`
+* Launch the app from the browser, you will be propted for db info/etc
+  * installation module is somewhat fragile, please add issues/pull requests at http://github.com/speckcommerce/SpeckInstall
  
-You may get a constraint error when importing the schema files -- try updating all of the submodules, or using the installer bash script if you're on Mac or Linux until we get it cleaned up.
-
-Working on modules
-------------------
-
-We've made it easy to help us work on the various Speck modules without having to worry yourself with the details of Git submodules.
-
-0. Fork the module you wish to work on, on GitHub.
-1. Clone **your fork** of the module into the `./devmodules` directory. SpeckCommerce will now be using this copy of the module instead of the one under `./vendor`.
-2. cd into `./devmodules/{modulename}`, and run `git remote add upstream https://github.com/speckcommerce/{modulename}.git`
-3. Always work in branches and do not commit to master! See [this post](http://blog.evan.pro/keeping-a-clean-github-fork-part-1). There's also a nice [bash script](https://gist.github.com/1506822) to help keep your master branch up to date.
-
-
-
 Community
 ---------
 
