@@ -25,7 +25,7 @@ Requirements
 
 The dependencies for SpeckCommerce are set up as Git submodules so you should not have to mess with dependencies.
 
-* PHP 5.4+
+* PHP 5.4+ (With short tags enabled)
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
 * [ZfcBase](https://github.com/ZF-Commons/ZfcBase)
 * [ZfcUser](https://github.com/ZF-Commons/ZfcUser)
