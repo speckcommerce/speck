@@ -42,6 +42,7 @@ Contributors
 * [Zachary Burnham](https://github.com/zburnham) (aka Evil\_Otto)
 * [Yanick Rochon](https://github.com/yanickrochon) (aka yanick)
 * [Kathryn Reeve](https://github.com/BinaryKitten) (aka BinaryKitten)
+* [Rob Shipley] (https://github.com/shipleyr) (aka shipleyr)
 
 If you've contributed and we haven't updated the list, please feel free to submit a pull request adding your name here!
 
